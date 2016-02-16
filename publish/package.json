@@ -1,0 +1,15 @@
+{
+  "name": "apidocs-coffee-example",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "TheGrid stress tests",
+  "main": "share-url.coffee",
+  "author": "Rituwall Inc.",
+  "dependencies": {
+    "coffee-script": "~1.7.1",
+    "express": "^4.12.4",
+    "form-data": "^0.2.0",
+    "oauth": "^0.9.13",
+    "uuid": "^2.0.1"
+  }
+}
