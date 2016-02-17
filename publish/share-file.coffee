@@ -40,8 +40,9 @@ exports.main = main = () ->
   shareFile fileToShare, token, (res) ->
     if res.statusCode > 202
       console.log 'Error sharing '
+      console.log res.statusCode
+      console.log res.body
       process.exit 3
     console.log "Finished sharing '#{fileToShare}': #{res.headers.location}"
 
 main() if not module.parent
-

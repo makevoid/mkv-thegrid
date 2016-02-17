@@ -39,4 +39,3 @@ class SimpleArticleFormat
 end
 
 Saf = SimpleArticleFormat
-MH = Hashie::Mash

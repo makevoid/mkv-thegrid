@@ -67,7 +67,7 @@ exports.main = main = () ->
   shareOne = (u, cb) ->
     shareUrl u, !nocompress, token, (res) ->
       if res.statusCode > 202
-        return cb new Error "Error sharing: #{res.statusCode}"
+        return cb new Error "Error sharing: #{res.statusCode} - #{res.body}"
       console.log "Shared '#{u}': #{res.headers.location} import=#{nocompress}"
       return cb null
 
@@ -84,4 +84,3 @@ exports.main = main = () ->
     onUrls null, [url]
 
 main() if not module.parent
-
