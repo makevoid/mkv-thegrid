@@ -31,3 +31,12 @@ Run the script
     ruby lib/dns.rb
 
 You need to add `config/dnsimple_token.txt` (general API token, not domain token) and then configure your domain directly into `lib/dns.rb`
+
+
+### Sites:
+
+Each site took ~5 minutes to create
+
+##### <https://thegrid.ai/mkv-projects/>
+##### <https://thegrid.ai/mkv-blockchain/>
+##### <https://thegrid.ai/mkv-dev/>
