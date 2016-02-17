@@ -14,14 +14,39 @@ def share(url)
   `THEGRID_TOKEN=#{TOKEN} coffee publish/share-url.coffee #{url}`
 end
 
-# name = :mkv
-name = :blockchain
-site = Saf.load site_path(name)
-site = MH.new site.first
-urls = site.log.split "\n"
-
-urls.each_with_index do |url, idx|
-  puts "sharing url: #{url}"
-
-  share url
+def upload(path)
+  `THEGRID_TOKEN=#{TOKEN} coffee publish/share-file.coffee #{path}`
 end
+
+def share_all
+  # name = :mkv
+  name = :blockchain
+  site = Saf.load site_path(name)
+  site = MH.new site.first
+  urls = site.log.split "\n"
+
+  urls.each_with_index do |url, idx|
+    puts "sharing url: #{url}"
+
+    share url
+  end
+end
+
+
+def upload_all
+  photos = Dir.glob("photos/to_upload/*")
+  photos.each do |photo|
+    puts "uploading #{photo}"
+    upload photo
+  end
+end
+
+
+def main
+  upload_all
+  # share_all
+end
+
+# MAIN!  :D
+#
+main()

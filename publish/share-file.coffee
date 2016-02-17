@@ -28,7 +28,7 @@ shareFile = (filePath, accessToken, callback) ->
 
 exports.main = main = () ->
   unless process.argv.length > 2
-    console.log "Usage: coffee share-file.coffee myfile.png"
+    console.log "Usage: coffee share-file.coffee myfile.jpg"
     process.exit 1
   fileToShare = process.argv[2]
 
