@@ -8,6 +8,28 @@ The sites get generated automatically with content and layout infos stored in th
 
 They get published via thegrid API.
 
+### Authenticate
+
+Use the coffeescript `auth.coffe` programs/script to authenticate to get an auth token
+
+run:
+
+    THEGRID_APP_ID=your_uuid THEGRID_APP_SECRET=xxxxx coffee publish/auth.coffee
+
+with my app uuid:
+
+    THEGRID_APP_ID=e51b880c-8b87-46e8-83af-feb6dffc6f0b THEGRID_APP_SECRET=$THEGRID_KEY coffee publish/auth.coffee
+
+in my case, because I exported that in an environment variable I have ($THEGRID_KEY), so I can regenerate easily tokens to keep posting on the grid :D
+
+FIY that's the export command I put in my ~/.bashrc
+
+    export THEGRID_KEY="xxxxxx"
+
+##### Then:
+
+visit <http://localhost:3000>, click the blue link, log in and obtain the token (you can hit CTRL-C to shutdown the server and run the export command to export the token)
+
 ### Setup
 
   gem i hashie
@@ -15,7 +37,7 @@ They get published via thegrid API.
 
 ### Run it
 
-    ruby grid_mkvd.rb
+    TOKEN=$THEGRID_TOKEN ruby grid_mkv.rb
 
 
 ### DNS
