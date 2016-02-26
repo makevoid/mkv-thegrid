@@ -62,3 +62,14 @@ Each site took ~5 minutes to create
 ##### <https://thegrid.ai/mkv-projects/>
 ##### <https://thegrid.ai/mkv-blockchain/>
 ##### <https://thegrid.ai/mkv-dev/>
+##### <https://thegrid.ai/mkv-photos/>
+
+
+I did some editing afterwards, but was minimal
+
+----
+
+feedback:
+
+> - awesome, publish the first version of the site via api and see it automatically layout-ed :D
+> - needs global cdn, the current one sometimes is slow in europe
