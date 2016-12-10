@@ -123,7 +123,14 @@ Each site took ~5 minutes to create
 ##### <https://thegrid.ai/mkv-photos/>
 
 
-I did some editing afterwards, but was minimal
+I did some editing afterwards, but it was minimal.
+
+When I wrote this readme and the `grid` script originally, thegrid.ai was not as good as it is now.
+
+---
+
+
+TODO: package the `grid` script as a binary
 
 ----
 
