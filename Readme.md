@@ -25,8 +25,10 @@ You can create a website from just content (links + metadata) with a shell comma
 
 The target of this project
 
+```
 grid http://example.com
 grid http://antani.com
+```
 
 |
 v
