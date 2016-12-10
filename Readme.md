@@ -1,10 +1,15 @@
 # TheGrid MKV
 
 
-status: WIP
+status: **WIP**
 
-note: this is a work in progress
+**note:** this is a work in progress
 
+**notes (extended):**
+
+`auth.coffee` used for login (source repo of the original auth.coffee vendored in this repo: https://github.com/the-grid/apidocs/blob/master/code-examples/coffeescript/auth.coffee ) ---> command: grid (needs alias to be installed, otherwise ruby grid_mkv.rb)
+
+----
 
 
 TheGrid now makes damn cool websites just by passing anything into it (video, picture, text, link, social stream, filtered social stream like by tag etc...)
@@ -14,10 +19,6 @@ TheGrid now makes damn cool websites just by passing anything into it (video, pi
 
 You can create a website from just content (links + metadata) with a shell command + some clicks in thegrid app
 
-
-other notes:
-
-`auth.coffee` used for login (source repo of the original auth.coffee vendored in this repo: https://github.com/the-grid/apidocs/blob/master/code-examples/coffeescript/auth.coffee ) ---> command: grid (needs alias to be installed, otherwise ruby grid_mkv.rb)
 
 
 ----
